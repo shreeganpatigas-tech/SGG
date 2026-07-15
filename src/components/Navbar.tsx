@@ -23,7 +23,10 @@ import medGasImg from '../assets/images/products/medical-oxygen.png';
 import cryoImg from '../assets/images/products/lco2.png';
 import lpgImg from '../assets/images/products/industrial-bulk-lpg.png';
 import equipImg from '../assets/images/products/equipment-accessories.png';
-import corpProfileImg from '../assets/images/company/corporate-profile.png';
+
+// Official Company Logo Imports
+import logoSvg from '../assets/images/company/logo.svg';
+import logoPng from '../assets/images/company/logo.png';
 
 import hospitalImg from '../assets/images/industries/hospital.png';
 import steelImg from '../assets/images/industries/steel.png';
@@ -152,12 +155,12 @@ export default function Navbar({ activePage, onNavigate }: NavbarProps) {
             aria-label="SGGPL Home"
           >
             <picture className="shrink-0">
-              <source srcSet="/assets/logo/logo.svg" type="image/svg+xml" />
+              <source srcSet={logoSvg} type="image/svg+xml" />
               <img
-                src="/assets/logo/logo.png"
+                src={logoPng}
                 alt="SGGPL Logo"
                 className="transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] object-contain h-[42px] md:h-[46px] lg:h-[50px] xl:h-[56px] group-hover:scale-105"
-                onError={(e) => { e.currentTarget.src = '/assets/logo/logo.png'; }}
+                onError={(e) => { e.currentTarget.src = logoPng; }}
               />
             </picture>
             <div className="flex flex-col justify-center text-left whitespace-nowrap shrink-0">
@@ -261,7 +264,7 @@ export default function Navbar({ activePage, onNavigate }: NavbarProps) {
               {activeDropdown === 'company' && (
                 <div className="max-w-[1400px] mx-auto h-[520px] flex p-10 gap-16">
                   <div className="w-[40%] rounded-2xl relative overflow-hidden group shadow-lg">
-                    <img src={corpProfileImg} alt="SGGPL Corporate Profile" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105" />
+                    <img src={logoSvg} alt="SGGPL Logo" className="absolute inset-0 w-full h-full object-contain p-8 bg-slate-50 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-10">
                       <h3 className="text-white text-3xl font-display font-light tracking-tight mb-3">Our Legacy</h3>
