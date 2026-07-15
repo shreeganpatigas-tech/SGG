@@ -1,0 +1,6 @@
+{
+  "name": "Shree Ganpati Gastech",
+  "description": "Official corporate website of Shree Ganpati Gastech Private Limited (SGGPL) - Engineering Precision, Powering Industries, Delivering Purity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
