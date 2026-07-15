@@ -22,7 +22,7 @@ import { PRODUCTS, INDUSTRIES } from '../data';
 
 // Corrected import paths based on your folder structure
 import heroImage from "../assets/images/hero/hero.png";
-import corporateProfileImage from "../assets/images/company/corporate-profile.png";
+import corporateProfileImage from "../assets/images/hero/corporate-profile.png";
 import getInTouchImage from "../assets/images/about/get-in-touch.png";
 
 function Counter({ value, duration = 1.5 }: { value: string; duration?: number }) {
