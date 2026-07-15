@@ -4,6 +4,8 @@
  */
 
 import React from "react";
+import companyLogo from "../assets/images/company/logo.svg";
+import companyLogoFallback from "../assets/images/company/logo.png";
 
 interface LogoProps {
   className?: string;
@@ -19,11 +21,11 @@ export default function Logo({
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <img
-        src="/favicon.svg"
-        alt="Shree Ganpati Gastech Private Limited"
+        src={companyLogo}
+        alt="Shree Ganpati Gastech Private Limited Logo"
         className="h-full w-auto object-contain shrink-0"
         draggable={false}
-        onError={(e) => { e.currentTarget.src = '/favicon.png'; }}
+        onError={(e) => { e.currentTarget.src = companyLogoFallback; }}
       />
 
       {showText && (
